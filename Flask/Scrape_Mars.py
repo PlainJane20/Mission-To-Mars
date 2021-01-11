@@ -1,7 +1,3 @@
-#################################################
-# Jupyter Notebook Conversion to Python Script
-#################################################
-
 # Dependencies
 import requests
 import time 
@@ -51,7 +47,7 @@ def scrape():
 
     mars_results["featured_img_url"] = featured_img_url
 
-      # Mars facts scraping
+    # Mars facts scraping
 
     facts_url = "https://space-facts.com/mars/"
     tables = pd.read_html(facts_url)
