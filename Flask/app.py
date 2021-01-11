@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
 import scrape_mars
 import os
+import jinja2
 
 # Hidden authetication file
 #import config 
@@ -32,7 +33,6 @@ def home():
 @app.route("/scrape")
 def scrape(): 
 
-   
     mars_data = scrape_mars.scrape_mars_news()
     mars_data = scrape_mars.scrape_mars_image()
     mars_data = scrape_mars.scrape_mars_facts()
