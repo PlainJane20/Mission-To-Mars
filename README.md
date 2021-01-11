@@ -117,4 +117,13 @@ To submit your work to BootCampSpot, create a new GitHub repository and upload t
 
 ### Copyright
 
-Trilogy Education Services © 2020. All Rights Reserved.
+
+Built With
+Python / Jupyter Notebook
+Pandas
+BeautifulSoup
+Flask
+Splinter / Selenium
+MongoDB
+HTML 5.0
+Bootstrap
