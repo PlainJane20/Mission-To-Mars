@@ -33,6 +33,8 @@ html = browser.html
 soup = bs(html, 'html.parser')
 print(soup.prettify())
 
+browser.quit()
+
 # news_title = soup.find('div',class_='content_title').text
 # print(news_title)
 
