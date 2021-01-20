@@ -33,6 +33,8 @@ html = browser.html
 soup = bs(html, 'html.parser')
 print(soup.prettify())
 
+browser.quit()
+
 # news_title = soup.find('div',class_='content_title').text
 # print(news_title)
 
@@ -59,8 +61,21 @@ browser = Browser('chrome', **executable_path, headless=False)
 jplimage_url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
 browser.visit(jplimage_url)
 
-browser.click_link_by_partial_text("FULL IMAGE")
-browser.click_link_by_partial_text("more info")
+# browser.click_link_by_partial_text("FULL IMAGE")
+# browser.click_link_by_partial_text("more info")
+
+# Use xpath of navbar to navigate to Featured Image
+time.sleep(1)
+xpath = '/html/body/div/div/div/header/div[1]/div[3]/div/nav/div[1]/div[4]/button/span'
+browser.find_by_xpath(xpath).click()
+
+time.sleep(1)
+xpath = '/html/body/div/div/div/header/div[1]/div[3]/div/nav/div[1]/div[4]/div/div/div/div/div[1]/div/div/div/a/p[1]'
+browser.find_by_xpath(xpath).click()
+
+time.sleep(1)
+xpath = '/html/body/div/div/div/main/div/div[2]/div/div/div[2]/button/span'
+browser.find_by_xpath(xpath).click()
 
 html = browser.html
 soup = bs(html, "html.parser")
