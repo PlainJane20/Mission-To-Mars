@@ -16,16 +16,16 @@ Using MongoDB with Flask templating to created a new HTML page that displays all
 ![final_app_part2.png](Images/final_app_part2.png)
 
 ### Built With
-* Python
-* Jupyter Notebook
-* Pandas
-* BeautifulSoup
-* Flask
-* Splinter
-* Selenium
-* MongoDB
-* HTML 5.0
-* Bootstrap
+* `Python`
+* `Jupyter Notebook`
+* `Pandas`
+* `BeautifulSoup`
+* `Flask`
+* `Splinter`
+* `Selenium`
+* `MongoDB`
+* `HTML 5.0`
+* `Bootstrap`
 
 ### Navi Sohi | Data Analytics & Visualization
 
