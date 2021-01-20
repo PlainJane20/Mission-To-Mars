@@ -115,15 +115,18 @@ To submit your work to BootCampSpot, create a new GitHub repository and upload t
 
 * Use Bootstrap to structure your HTML template.
 
-### Copyright
+### Built With
+* Python
+* Jupyter Notebook
+* Pandas
+* BeautifulSoup
+* Flask
+* Splinter
+* Selenium
+* MongoDB
+* HTML 5.0
+* Bootstrap
 
 
-Built With
-Python / Jupyter Notebook
-Pandas
-BeautifulSoup
-Flask
-Splinter / Selenium
-MongoDB
-HTML 5.0
-Bootstrap
+
+
