@@ -33,8 +33,6 @@ html = browser.html
 soup = bs(html, 'html.parser')
 print(soup.prettify())
 
-browser.quit()
-
 # news_title = soup.find('div',class_='content_title').text
 # print(news_title)
 
@@ -65,22 +63,17 @@ browser.visit(jplimage_url)
 # browser.click_link_by_partial_text("more info")
 
 # Use xpath of navbar to navigate to Featured Image
-time.sleep(1)
-xpath = '/html/body/div/div/div/header/div[1]/div[3]/div/nav/div[1]/div[4]/button/span'
-browser.find_by_xpath(xpath).click()
-
-time.sleep(1)
-xpath = '/html/body/div/div/div/header/div[1]/div[3]/div/nav/div[1]/div[4]/div/div/div/div/div[1]/div/div/div/a/p[1]'
-browser.find_by_xpath(xpath).click()
-
-time.sleep(1)
-xpath = '/html/body/div/div/div/main/div/div[2]/div/div/div[2]/button/span'
-browser.find_by_xpath(xpath).click()
-
 html = browser.html
 soup = bs(html, "html.parser")
 
-print(soup.prettify())
+featured_image_url = soup.find('div', class_="object-cover").find('img')['src']
+featured_image_url
+
+results = soup.find_all('figure', class_="lede")
+for result in results:
+    image = result.a['href']
+    featured_image_url = image
+    print("https://www.jpl.nasa.gov"+ featured_image_url)
 
 # Mars Facts
 
