@@ -27,6 +27,6 @@ Using MongoDB with Flask templating to created a new HTML page that displays all
 * `HTML 5.0`
 * `Bootstrap`
 
-### Navi Sohi | Data Analytics & Visualization
+### [Navi Sohi](https://github.com/PlainJane20) | Data Analytics & Visualization
 
 
